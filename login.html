@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login</title>
+  <link rel="stylesheet" href="./src/output.css" />
+</head>
+<body class="p-0 m-0 bg-slate-900 text-slate-50 font-serif flex-col justify-center items-center">
+  <div class="w-full h-screen flex justify-center items-center">
+    <div class="w-sm border-blue-600 border-4 p-16 m-4 gap-8 flex-col justify-center items-center rounded-xl">
+      <h2 class="text-center text-4xl mb-4 font-mono">Login</h2>
+      <input type="text" placeholder="Email" class="focus:outline-none w-full h-8 bg-gray-300 text-amber-950 mb-4 rounded-md p-6 font-mono" />
+      <input type="password" placeholder="Password" class="focus:outline-none w-full h-8 bg-gray-300 text-amber-950 mb-4 rounded-md p-6 font-mono" />
+      <button type="submit" class="w-full h-10 bg-blue-600 rounded-md font-bold font-mono hover:bg-blue-800 cursor-pointer mb-4">
+        Login
+      </button>
+      <button type="submit" class="w-full h-10 rounded-md font-bold font-mono cursor-pointer mb-4 text-2xl" onclick="show()">
+        SignUp
+      </button>
+    </div>
+  </div>
+  <script>
+    function show(){
+      // alert("Register-Button is pressed");
+      window.location.href = "register.html";
+    }
+  </script>
+</body>
+</html>
